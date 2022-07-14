@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+ }
+ body.dark{
+    background-color: #000;
+    color: white;
+    transition: 0.5s;
+}
+ .nav{
+     width: 100%;
+     height: 60px;
+     display: flex;
+     justify-content: space-between;
+ }
+ nav ul{
+     padding: 0;
+     margin: 0;
+ }
+ nav ul li{
+     position: relative;
+     list-style: none;
+     display: inline-block;
+ }
+ nav ul li a{
+     display: block;
+     padding: 0 10px;
+     color: black;
+     text-decoration: none;
+     line-height: 60px;
+     font-size: 20px;
+ }
+ nav ul li a:hover{
+     background-color:#24354b;
+     color: cornsilk;
+     text-decoration: none;
+ }
+ 
+ #team .col{
+     background-image: url("img/11.png");
+     background-repeat: repeat-x;
+     background-attachment: fixed;
+     color: #fff;
+ }
+ h1{
+     font-size: 36px;
+     color: #555;
+     font-weight: bold;
+ }
+ h3{
+     font-size: 24px;
+     color: #333;
+     font-weight: bold;
+ }
+ #team img{
+     margin-top: -50px;
+ }
+ #team i{
+     font-size: 26px;
+     color: #555;
+ }
+ #team p{
+     font-weight: 500;
+ }
+ #team .card{
+     border-radius: 0;
+     box-shadow: 5px 5px 15px #24354b;
+     transition: all 0.3s ease-in;
+     -webkit-transition: all 0.3s ease-in;
+     -moz-transition: all 0.3s ease-in;
+ }
+ #team .card:hover{
+     background: #17253d;
+     color: #ccc;
+     border-radius: 5px;
+     border: none;
+     box-shadow: 5px 5p 10px #24354b;
+ }
+ #team .card:hover h3, #team .card:hover i{
+     color: #fff;
+ 
+ }
+ .card-body{
+     height: 500px;
+ }
+
+
+
+ /*footer section*/
+
+.footer{
+    background-color: #000;
+    max-width: 100%;
+}
+.cards{
+    background-color: rgb(48, 44, 44);
+    color: white;
+    padding: 20px;
+    margin-top: 25px;
+    margin-bottom: none;
+    height: 70vh;
+    width: 85%;
+    box-shadow: 10px 3px 20px -3px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 10px 3px 20px -3px rgba(0,0,0,0.3);
+    -moz-box-shadow: 10px 3px 20px -3px rgba(0,0,0,0.3);
+}
+.card .card-text{
+    text-align: center;
+}
+.card .card-text p{
+    margin-top: 15px;
+}
+.card .card-text h1{
+    margin-top: 50px;
+}
+.footer .cpr{
+    background-color: rgb(48, 44, 44);
+    height: 8vh;
+    margin-top: 40px;
+}
+.footer .cpr p{
+    color: #ccc;
+    padding-top: 12px;
+}
+.cpr a{
+    padding-right: 20px;
+    text-decoration: none;
+    color: #ccc;
+}
+.map{
+    color: white;
+    padding: 20px;
+    margin-top: 25px;
+    margin-bottom: none;
+    height: 70vh;
+    width: 85%;
+}
+.map-content{
+    margin-top: 20px;
+}
+section.footer .map{
+    margin-top: 25px;
+}
+section.footer .map p{
+    color: white;
+    margin-top: 15px;
+}
+.map-text h4{
+    margin-top: 65px;
+}
+.map-text  h4::before{
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 3px;
+    margin-top: 45px;
+    background-color: #063e9e;
+    
+}
+.map-link{
+    padding: 1px;
+    margin-top: 55px;
+}
+.map-link li{
+    padding: 5px;
+    list-style: none;
+}
+.map-link a{
+    text-decoration: none;
+    color: #666;
+}
+.map-link .col{
+    margin-bottom: 15px;
+}
+.call
+{
+    color: white;
+    padding: 20px;
+    margin-top: 25px;
+    margin-bottom: none;
+    height: 70vh;
+    width: 85%;
+}
+.call-text p{
+    margin-top: -236px;
+    color: white;
+    padding-right: 55px;
+}
+.call-input{
+    margin-top: 50px;
+    text-align: center;
+}
+.call-input input{
+    background-color: rgb(73, 72, 72);
+    width: 220px;
+    line-height: 40px;
+    border: 1px solid rgb(73, 72, 72);
+    border-radius: 50px;
+    text-indent: 16px;
+    outline: 0;
+}
+.call-input input:focus{
+    outline: none;
+    color: white;
+}
+.card-icon{
+    position: absolute;
+    left: 45px;
+    bottom: -10px;
+}
