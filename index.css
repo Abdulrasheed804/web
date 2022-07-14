@@ -263,7 +263,7 @@ section.footer .map p{
       margin-top: 5px;
       margin-bottom: 5px;
       position: relative;
-      background: rgb(34, 32, 32);
+      background: rgb(72, 124, 236);
       border-radius: 1px;
 }
 .menu-body{
@@ -289,9 +289,13 @@ section.footer .map p{
       }
 }
 #menu-link a{
-    width: 20px;
-    padding: 20px;
+    padding: 1px;
     transition: 0.5s;
+}
+#menu-link{
+    position: absolute;
+    margin: -20px;
+    left: 20px;
 }
 #menu-link li:hover{
     transition: 0.3s;
