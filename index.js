@@ -1,16 +1,19 @@
- 
- moon_cloud.addEventListener('click', function() {
-    document.body.classList.toggle('dark');
- });
  night_mode.addEventListener('click', function() {
     document.body.classList.toggle('dark');
+
+    let ham = document.querySelectorAll(".ham");
+    for (let i = 0; i < ham.length; i++) {
+        ham[i].style.background = (ham[i].style.background == 'white') ? 'black' : 'white';
+    }
+    console.log(ham);
  });
+
  hamburger.addEventListener('click', function(){
     let menu = document.getElementById('menu-body');
     if(menu.style.display === 'block'){
          menu.style.display = 'none';
     }else{
-        menu.style.display = 'block'
+        menu.style.display = 'block';
     };
    
  });

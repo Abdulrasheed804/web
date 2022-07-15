@@ -256,14 +256,14 @@ section.footer .map p{
     padding: 5px;
     transition: 0.2s;
 }
-.div1, .div2, .div3{
+.ham{
       display: block;
       width: 30px;
       height: 3px;
       margin-top: 5px;
       margin-bottom: 5px;
       position: relative;
-      background: rgb(72, 124, 236);
+      background: rgb(19, 19, 19);
       border-radius: 1px;
 }
 .menu-body{
