@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>feedback page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!--scroll effect-->
+    <!--<script src="https://unpkg.com/scrollreveal"></script>-->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" rel="stylesheet">
+    
+</head>
+<body>
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="rgb(214, 102, 102)" style="cursor: pointer; position:fixed; left: 20px; top: 12px" id="night_mode" class="bi bi-cloud-moon-fill moon_cloud" viewBox="0 0 16 16">
+        <path d="M11.473 11a4.5 4.5 0 0 0-8.72-.99A3 3 0 0 0 3 16h8.5a2.5 2.5 0 0 0 0-5h-.027z"/>
+        <path d="M11.286 1.778a.5.5 0 0 0-.565-.755 4.595 4.595 0 0 0-3.18 5.003 5.46 5.46 0 0 1 1.055.209A3.603 3.603 0 0 1 9.83 2.617a4.593 4.593 0 0 0 4.31 5.744 3.576 3.576 0 0 1-2.241.634c.162.317.295.652.394 1a4.59 4.59 0 0 0 3.624-2.04.5.5 0 0 0-.565-.755 3.593 3.593 0 0 1-4.065-5.422z"/>
+        </svg>
+    <h1 class="text-center"><i class="bi bi-chat-left"></i> &nbsp; Feedback Form</h1>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center" >
+                <div class="form-field">
+                    <div class="label"><p>email</p></div>
+                    <input type="email" name="" id="" placeholder="Your email address">
+                </div>
+                <div class="col-lg-12 text-center">
+                    <div class="form-field">
+                        <div class="label"><p>subject</p></div>
+                        <input type="text" name="" id="" placeholder="Summary of your observation....">
+                    </div>
+                </div>
+                <div class="col-lg-12 text-center">
+                    <div class="form-field">
+                        <div class="label"><p>Message</p></div>
+                        <textarea type="text" name="" id="" placeholder="Give us many details as possible"></textarea>
+                    </div>
+                </div>
+                <div class="col-lg-12 text-center">
+                    <div class="label"><p>add attachment</p></div>
+                    <input type="file" name="" id="">
+                    <button type="submit">submit</button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+    <style>
+        body.night{
+            background-color: #000;
+            color: #fff;
+            transition: 0.5s;
+         }
+        
+        .container{
+            background-color: rgb(242, 245, 247);
+            width: 40rem;
+        }
+        h1{
+            font-family: 'Courier New', Courier, monospace;
+            color: rgb(214, 102, 102);
+            margin: 30px;
+            background: linear-gradient(to right, #f4524d 0%, #5543ca 100%);
+            -webkit-background-clip: text;
+           -webkit-text-fill-color: transparent;
+        }
+        .label{
+            margin-right: 26rem;
+            margin-top: 1rem;
+        }
+        .label p{
+            text-transform: capitalize;
+            font-size: 20px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .form-field input{
+            background-color: #fff;
+            width: 30rem;
+            border-radius: 5px;
+        }
+        .form-field input{
+            border: none;
+            padding: 1rem;
+        }
+        .form-field input:focus{
+            outline: none;
+        }
+        textarea{
+            width: 30rem;
+            height: 15rem;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+        textarea:focus{
+            outline: none;
+        }
+        button{
+            width: 10rem;
+            text-transform: capitalize;
+            padding: 5px;
+            border: none;
+            color: #fff;
+            background: linear-gradient(to right, #f4524d 0%, #5543ca 100%);
+            
+            
+        }
+    </style>
+    <script>
+        night_mode.addEventListener('click', function(){
+            document.body.classList.toggle('night')
+        })
+    </script>
+</body>
+</html>

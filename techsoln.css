@@ -52,6 +52,10 @@
      color: #333;
      font-weight: bold;
  }
+ p, h5{
+    color: rgb(14, 13, 13);
+ }
+
  #team img{
      margin-top: -50px;
  }
@@ -64,6 +68,7 @@
  }
  #team .card{
      border-radius: 0;
+     margin: 10px;
      box-shadow: 5px 5px 15px #24354b;
      transition: all 0.3s ease-in;
      -webkit-transition: all 0.3s ease-in;
@@ -78,7 +83,9 @@
  }
  #team .card:hover h3, #team .card:hover i{
      color: #fff;
- 
+ }
+ #team .card:hover h5, #team .card:hover p{
+    color: #fff;
  }
  .card-body{
      height: 500px;
@@ -205,6 +212,7 @@ section.footer .map p{
 }
 .card-icon{
     position: absolute;
+    
     left: 45px;
     bottom: -10px;
 }

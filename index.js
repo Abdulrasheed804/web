@@ -1,11 +1,6 @@
- night_mode.addEventListener('click', function() {
+ 
+moon_cloud.addEventListener('click', function() {
     document.body.classList.toggle('dark');
-
-    let ham = document.querySelectorAll(".ham");
-    for (let i = 0; i < ham.length; i++) {
-        ham[i].style.background = (ham[i].style.background == 'white') ? 'black' : 'white';
-    }
-    console.log(ham);
  });
 
  hamburger.addEventListener('click', function(){
@@ -17,7 +12,8 @@
     };
    
  });
-users.addEventListener('click', function(){
+
+ users.addEventListener('click', function(){
     let user = document.getElementById('userCard');
     if(user.style.display === 'block'){
         user.style.display = 'none';
@@ -25,15 +21,9 @@ users.addEventListener('click', function(){
        user.style.display = 'block'
    };
 });
-     
-
-const popup = document.querySelector('.popup');
-function showPopup() {
-  popup.classList.add('open');
-}
-function hidePopup() {
-  popup.classList.remove('open');
-}
+night_mode.addEventListener('click', function() {
+    document.body.classList.toggle('dark');
+})
 
 
 window.sr= ScrollReveal();

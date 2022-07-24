@@ -1,8 +1,4 @@
-*{
-    font-family: 'Open Sans', sans-serif;
-    margin: 0;
-    padding: 0;
-}
+ 
 
 body.dark{
     background-color: #000;
@@ -138,9 +134,10 @@ section.about-us .exp{
 }
 .card .card-text p{
     margin-top: 15px;
+    
 }
 .card .card-text h1{
-    margin-top: 50px;
+    margin-top: 10px;
 }
 .footer .cpr{
     background-color: rgb(48, 44, 44);
@@ -233,7 +230,7 @@ section.footer .map p{
 }
 .card-icon{
     position: absolute;
-    margin-top: 17.5rem;
+    margin-top: 13.5rem;
 }
 .card-icon svg{
     float: left;
@@ -263,7 +260,7 @@ section.footer .map p{
       margin-top: 5px;
       margin-bottom: 5px;
       position: relative;
-      background: rgb(19, 19, 19);
+      background: rgb(97, 92, 92);
       border-radius: 1px;
 }
 .menu-body{
@@ -390,12 +387,58 @@ section.footer .map p{
     }
 }
 
+/* contact page */
 
+#contact_us{
+    color: #063e9e;
+    text-align: center;
+    margin-top: 3rem;
+}
+#contact_information{
+    border-radius: 1px;
+    padding: 20px;
+    background-color: rgb(250, 242, 242);
+}
+#contact_information{
+    background-color: rgb(43, 10, 190);
+    color: #dfff;
+    padding: 30px ;
+    border-radius: 10px 10px ;
+}
+#contact_information i{
+    line-height: 5rem;
+    color: #000;
+}
+.smd i{
+    margin: 10px;
+    font-size: 25px;
+}
 
+.smd i:hover{
 
+}
 
-
-
+textarea:focus{
+    outline: none;
+}
+.contact-mail{
+    
+        margin-top: 50px;
+        text-align: center;
+}
+    .contact-mail input{
+        background-color: rgb(73, 72, 72);
+        width: 220px;
+        line-height: 40px;
+        border: 1px solid rgb(73, 72, 72);
+        border-radius: 50px;
+        text-indent: 16px;
+        outline: 0;
+    }
+    .contact-mail input:focus{
+        outline: none;
+        color: white;
+    }
 
 
 
