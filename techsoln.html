@@ -315,11 +315,10 @@
         <div class="col-sm-4">
           <div class="card cards" style="background-color: rgb(48, 44, 44);">
             <div class="carg-img">
-              <img src="home-img/contact-us.svg" alt="" class="img-fluid" >
+              <img src="home-img/follow.svg" alt="" class="img-fluid" >
             </div>
             <div class="card-text">
-              <p> ipsa nam fuga, id est enim fugit consequuntur reprehenderit quae maxime explicabo doloremque officia?</p>
-              <h1>Follow Us</h1>
+              <p><b>FOLLOW US</b><br>consequuntur reprehenderit quae maxime explicabo doloremque officia?</p>
             </div>
             <div class="card-icon text-center p-4">
               <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="blue" class="bi bi-facebook text-center" viewBox="0 0 16 16">
@@ -392,13 +391,17 @@
       </div>
     </div>
     <div class="cpr">
-      <p class="text-center">copyright &copy 2021, All Right Reserved </p>
+      <p class="text-center">copyright &copy <span id="year"></span> All Right Reserved </p>
     </div>
     </section>
     <script>
       moon_cloud.addEventListener('click', function() {
           document.body.classList.toggle("dark");
        });
+
+       let d = new Date()
+       const year = d.getFullYear()
+       document.getElementById("year").innerHTML = year
     </script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     

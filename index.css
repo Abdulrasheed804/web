@@ -123,7 +123,8 @@ section.about-us .exp{
     color: #ffff;
     padding: 20px;
     margin-top: 25px;
-    margin-left: 30px;
+    margin-right: 25px;
+    margin-left: 25px;
     height: 70vh;
     box-shadow: 10px 3px 20px -3px rgba(0, 0, 0, 0.3);
     -webkit-box-shadow: 10px 3px 20px -3px rgba(61, 51, 122, 0.3);
@@ -131,6 +132,7 @@ section.about-us .exp{
 }
 .card .card-text{
     text-align: center;
+    margin-top: 25px;
 }
 .card .card-text p{
     margin-top: 15px;
@@ -230,12 +232,14 @@ section.footer .map p{
 }
 .card-icon{
     position: absolute;
-    margin-top: 13.5rem;
+    margin-top: 13rem;
+    margin-left: 1rem;
 }
 .card-icon svg{
     float: left;
     width: 50px;
     padding: 5px;
+    z-index: 999;
 }
 /*hamburger*/
 .hamburger{
@@ -443,7 +447,7 @@ textarea:focus{
 
 
 
-
+ 
 
 
 
