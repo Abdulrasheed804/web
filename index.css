@@ -279,6 +279,7 @@ section.footer .map p{
     display: none;
     transition: 0.5s;
     animation: mymove 1s;
+    z-index: 9999;
 }
 @keyframes mymove{
     from {
