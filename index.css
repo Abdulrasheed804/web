@@ -1,4 +1,11 @@
- 
+ #preloader{
+    background: #FFFFFF url("home-img/25.svg") no-repeat center;
+    height: 100vh;
+    background-size: 7%;
+    width: 100%;
+    z-index: 100;
+    position: fixed;
+ }
 
 body.dark{
     background-color: #000;

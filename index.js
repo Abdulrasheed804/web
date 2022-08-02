@@ -12,10 +12,6 @@ moon_cloud.addEventListener('click', function() {
     };
    
  });
- function close(){
-    let all = document.getElementById('overlay')
-    console.log(all)
- }
  users.addEventListener('click', function(){
     let user = document.getElementById('userCard');
     if(user.style.display === 'block'){
@@ -28,6 +24,11 @@ night_mode.addEventListener('click', function() {
     document.body.classList.toggle('dark');
 })
 
+var loader = document.getElementById("preloader")
+
+  window.addEventListener('load', function(){
+    loader.style.display = 'none'
+ })
 
 window.sr= new ScrollReveal();
         sr.reveal('.hamburger', {
