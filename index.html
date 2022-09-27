@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <title>Tech-Series</title>
-    <link rel="icon" href="logo.png">
+    <link rel="icon" href="TSERIES.jpg">
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -23,7 +23,7 @@
     <div id ="preloader"></div>
     
     <!--media query nav-bar and menu -->
-    <div class="night_mode">
+    <div class="night-mode">
        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="blue" style="cursor: pointer; position:fixed; left: 20px; top: 12px" id="night_mode" class="bi bi-cloud-moon-fill moon_cloud" viewBox="0 0 16 16">
          <path d="M11.473 11a4.5 4.5 0 0 0-8.72-.99A3 3 0 0 0 3 16h8.5a2.5 2.5 0 0 0 0-5h-.027z"/>
          <path d="M11.286 1.778a.5.5 0 0 0-.565-.755 4.595 4.595 0 0 0-3.18 5.003 5.46 5.46 0 0 1 1.055.209A3.603 3.603 0 0 1 9.83 2.617a4.593 4.593 0 0 0 4.31 5.744 3.576 3.576 0 0 1-2.241.634c.162.317.295.652.394 1a4.59 4.59 0 0 0 3.624-2.04.5.5 0 0 0-.565-.755 3.593 3.593 0 0 1-4.065-5.422z"/>
@@ -38,11 +38,9 @@
 
     <div class="menu-body" id="menu-body">
       <ul id="menu-link" style="list-style: none; color: white;">
-        <a href="contact_us.html" style="text-decoration: none; color: white;"><li>Contact Us</li></a>
         <a href="#about" style="text-decoration: none; color: white;"><li>About</li></a>
         <a href="techsoln.html" style="text-decoration: none; color: white;"><li>Our Team</li></a>
         <a href="shop.html" style="text-decoration: none; color: white;"><li>Shop</li></a>
-        <a href="complaint.html" target="_blank" style="text-decoration: none; color: white;"><li>compliant ?</li></a>
         <a href="login.html" target="_blank" style="text-decoration: none; color: white;"><li>Login</li></a>
         <a href="create.html" target="_blank" style="text-decoration: none; color: white;"><li>create Account</li></a>
 
@@ -51,13 +49,13 @@
 
     <nav class="navbar-nav sticky-top" id="nav-style">
       <div class="nav-text" style="position: absolute; top: 15px;">
-        <h2 style="color: rgb(7, 7, 243); font-weight: 500;"> &nbsp; Tech-Series...</h2>
+        <a href="index.html"><h2 style="color: rgb(7, 7, 243); font-weight: 500;"> &nbsp; Tech-Series...</h2></a>
       </div>
       <div class="nav-link" style="color: #063e9e;">
         <a href="contact_us.html" class="links">Contact Us</a>
         <a href="#about" class="links">About Us</a>
-        <a href="techsoln.html" class="links">Team</a>
-        <a href="shop.html" class="links">Shop</a>
+        <a href="techsoln.html" target="_parent" class="links">Team</a>
+        <a href="shop.html" target="_blank" class="links">Shop</a>
         <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" style="cursor: pointer" id="moon_cloud" class="bi bi-cloud-moon-fill moon_cloud" viewBox="0 0 16 16">
           <path d="M11.473 11a4.5 4.5 0 0 0-8.72-.99A3 3 0 0 0 3 16h8.5a2.5 2.5 0 0 0 0-5h-.027z"/>
           <path d="M11.286 1.778a.5.5 0 0 0-.565-.755 4.595 4.595 0 0 0-3.18 5.003 5.46 5.46 0 0 1 1.055.209A3.603 3.603 0 0 1 9.83 2.617a4.593 4.593 0 0 0 4.31 5.744 3.576 3.576 0 0 1-2.241.634c.162.317.295.652.394 1a4.59 4.59 0 0 0 3.624-2.04.5.5 0 0 0-.565-.755 3.593 3.593 0 0 1-4.065-5.422z"/>
@@ -70,18 +68,20 @@
     
     <!--welcome section -->
     <div class="" id="userCard">
-      <p class="card-text"><small  style="color: blue;">welcome to tech-series!</small></p>
-      <div class="card-btn">
-        <a href="create.html" class="login">Sign up</a><a href="login.html" class="sign-in">Sign in</a>
-      </div>
-      <div class="card-list">
-        <ul>
-          <a href=""><li>My Orders</li></a>
-          <a href=""><li>Message</li></a>
-          <a href=""><li>Wish List</li></a>
-          <a href=""><li>Promo</li></a>
-          <a href=""><li>cart</li></a>
-        </ul>
+      <p2 class="card-text"><small  style="color: blue;"> welcome to tech-series!</small></p2>
+      <div class="card-content">
+        <div class="card-btn">
+          <a href="create.html" class="login">Sign up</a><a href="login.html" class="sign-in">Sign in</a>
+        </div>
+        <div class="card-list">
+          <ul>
+            <a href=""><li>My Orders</li></a>
+            <a href=""><li>Message</li></a>
+            <a href=""><li>Wish List</li></a>
+            <a href=""><li>Promo</li></a>
+            <a href=""><li>cart</li></a>
+          </ul>
+        </div>
       </div>
     </div>
     <section class="container welcome">
@@ -198,14 +198,14 @@
                 <div class="link">
                   <div class="container">
                     <div class="row row-cols-2 map-link">
-                      <div class="col"><a href="#">About Us</a></div>
-                      <div class="col"><a href="#">Contact Us</a></div>
+                      <div class="col"><a href="#about">About Us</a></div>
+                      <div class="col"><a href="contact_us.html">Contact Us</a></div>
                       <div class="col"><a href="#">Services</a></div>
                       <div class="col"><a href="#">Blog</a></div>
                       <div class="col"><a href="#">Projects</a></div>
                       <div class="col"><a href="#">Feedback</a></div>
                       <div class="col"><a href="#">Faq</a></div>
-                      <div class="col"><a href="#">Our Team</a></div>
+                      <div class="col"><a href="techsoln.html">Our Team</a></div>
                     </div>
                   </div>
                 </div>

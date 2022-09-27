@@ -1,6 +1,22 @@
- 
+
+//     const today = new Date();
+//     let h = today.getHours();
+  
+   
+// if(h < 0 || h < 7){
+//     document.body.classList.toggle('black');
+// }else{
+//     void(0)
+// }
+
+
+// setTimeout(function(){
+//     document.body.classList.toggle('black');
+// })
+
+
 moon_cloud.addEventListener('click', function() {
-    document.body.classList.toggle('dark');
+    document.body.classList.toggle('black');
  });
 
  hamburger.addEventListener('click', function(){
@@ -21,7 +37,7 @@ moon_cloud.addEventListener('click', function() {
    };
 });
 night_mode.addEventListener('click', function() {
-    document.body.classList.toggle('dark');
+    document.body.classList.toggle('black');
 })
 
 var loader = document.getElementById("preloader")
@@ -44,7 +60,7 @@ window.sr= new ScrollReveal();
         });
         sr.reveal('.welcomeanime', {
             duration: 1000,
-            origin: 'bottom',
+            origin: 'top',
             distance: '100px',
             reset: true
         });
@@ -76,24 +92,17 @@ window.sr= new ScrollReveal();
             useDelay: 'always',
             reset: true
         });
-        sr.reveal('.img-fluid', {
-            duration: 2000,
-            origin: 'left',
-            distance: '300px',
-            viewFactor: 0.2,
-            reset: true
-        });
         
         sr.reveal('.text', {
             duration: 1000,
-            origin: 'bottom',
+            origin: 'top',
             distance: '300px',
             viewFactor: 0.2,
             reset: true
         });
         sr.reveal('p', {
             duration: 500,
-            origin: 'left',
+            origin: 'top',
             distance: '300px',
             viewFactor: 0.2,
             reset: true
@@ -106,6 +115,9 @@ window.sr= new ScrollReveal();
             reset: true
         });
         
+//     passwordEl.addEventListener("click", function (){
+//     console.log("this is click")
+// })
 
 
 /*scroll reveal values 
@@ -143,7 +155,7 @@ window.sr= new ScrollReveal();
     beforeReveal: function (el) {},
 }
 */
-
+//form for create.html page
 
 
 

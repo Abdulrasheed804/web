@@ -1,3 +1,6 @@
+ *{
+    font-family: Arial, Helvetica, sans-serif;
+ }
  #preloader{
     background: #FFFFFF url("home-img/25.svg") no-repeat center;
     height: 100vh;
@@ -7,7 +10,7 @@
     position: fixed;
  }
 
-body.dark{
+body.black{
     background-color: #000;
     color: white;
     transition: 0.5s;
@@ -325,8 +328,9 @@ section.footer .map p{
     width: 40vh;
     height: 50vh;
     position: fixed;
-    bottom: 250px;
+    bottom: 220px;
     right: 10px;
+    z-index: 9;
 }
 #userCard p{
     margin-left: 20px;
@@ -352,6 +356,13 @@ section.footer .map p{
     padding: 7px;
     text-decoration: none;
     margin: 10px; 
+}
+.card-text{
+    margin-top: 25px;
+    margin-left: 20px;
+}
+.card-content{
+    margin-top: 20px;
 }
 .login{
     background-color: #063e9e;

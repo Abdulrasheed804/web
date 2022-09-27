@@ -3,8 +3,6 @@
   <head>
     <title>create an account</title>
     <link rel="stylesheet" href="create.css">
-    <link href="fontawesome/css/all.css" rel="stylesheet">
-    <script src="website.js"></script>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -14,48 +12,82 @@
   </head>
   <body>
     <div class="main">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="rgb(43, 10, 190)" style="cursor: pointer; position:fixed; left: 20px; top: 12px" id="moon_cloud" class="bi bi-cloud-moon-fill moon_cloud" viewBox="0 0 16 16">
+            <path d="M11.473 11a4.5 4.5 0 0 0-8.72-.99A3 3 0 0 0 3 16h8.5a2.5 2.5 0 0 0 0-5h-.027z"/>
+            <path d="M11.286 1.778a.5.5 0 0 0-.565-.755 4.595 4.595 0 0 0-3.18 5.003 5.46 5.46 0 0 1 1.055.209A3.603 3.603 0 0 1 9.83 2.617a4.593 4.593 0 0 0 4.31 5.744 3.576 3.576 0 0 1-2.241.634c.162.317.295.652.394 1a4.59 4.59 0 0 0 3.624-2.04.5.5 0 0 0-.565-.755 3.593 3.593 0 0 1-4.065-5.422z"/>
+        </svg>
         <h1 class="title">Create Account</h1>
-        <div class="container">
+        <form class="container">
             <div class="contact-form row">
                 <div class="form-field col-lg-6">
-                    <input id="First name" class="input-text" type="text" name="">
+                    <input id="First-name" class="input-text" type="text" name="" required>
                     <label for="First name" class="label">First name</label>
                 </div>
                 <div class="form-field col-lg-6">
-                    <input id="Last name" class="input-text" type="text" name="">
+                    <input id="Last-name" class="input-text" type="text" name="" required>
                     <label for="Last name" class="label">Last name</label>
                 </div>
                 <div class="form-field col-lg-6">
-                    <input id="email" class="input-text" type="text" name="">
+                    <input id="email" class="input-text" type="text" name="" required>
                     <label for="email" class="label extra">email</label>
                 </div>
                 <div class="form-field col-lg-6">
-                    <input type="password" class="input-text" name="" id="" placeholder="8-10 characters">
+                    <input type="password" class="input-text" name="" id="password-el" placeholder="8-10 characters" >
                     <label for="password" class="label extra">Password</label>
+                    <label id="warning" style="color: red; display:none; position: absolute; left: 200px;">caps lock is on <span>&#9888;</span></label>
                     <i class="fa fa-eye-slash eyeslash" aria-hidden="true" id="fa-eye-slash"></i>
                 </div>
                 <div class="form-field col-lg-12">
-                    <input id="mobile number" class="input-text" type="number" name="">
+                    <input id="mobile-number" class="input-text" type="number" name="" required>
                     <label for="mobile number" class="label">Mobile Number</label>
                 </div>
                 <div class="form-check">
                     <label class="form-check-label">
-                    <input type="radio" class="form-check-input" name="" id="" value="checkedValue" >
+                    <input type="radio" class="form-check-input" name="" id="check" value="checked" required>
                     I agree to the tearms and conditions
                     </label>
                 </div>
                 <div class="form-field col-lg-12">
-                    <input class="submit-btn" type="submit" value="submit" name="">
+                    <input class="submit-btn" type="submit" value="submit" name="" id="btn">
                 </div>
                 <p4 class="log">already have an account?&nbsp;<a href="login.html">LOGIN</a></p4>
             </div>
-        </div>
-        <button onclick="myFunction()"></button>
+        </form>
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+    <script>
+        moon_cloud.addEventListener("click", function(){
+            document.body.classList.toggle('black');
+        });
+        let firstNameEl = document.getElementById("First-name")
+        let lastNameEl = document.getElementById("Last-name")
+        let emailEl = document.getElementById("email")
+        let passwordEl = document.getElementById("password-el")
+        let numberEl = document.getElementById("mobile-number")
+        let button = document.getElementById("btn")
+        let warningEl = document.getElementById("warning")
+        let checkBox = document.getElementById("check")
+             passwordEl.addEventListener("keyup", function(e){
+                if (e.getModifierState("CapsLock")){
+                    warningEl.style.display = "block"
+                }else{
+                    warningEl.style.display = "none"
+                }
+                
+             });
+             
+             
+
+
+             btn.addEventListener("click", function(){
+                if (passwordEl.value === ""){
+                alert("password field cannot be empty")
+             }else if(passwordEl.value.length < 8){
+                alert("password should be 8-15 characters")
+             }
+             
+             });
+    </script>
+</body>
 </html>

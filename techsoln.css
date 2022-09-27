@@ -10,6 +10,9 @@
     z-index: 100;
     position: fixed;
  }
+ .reps{
+    color: #555;
+ }
  body.dark{
     background-color: #000;
     color: white;
@@ -44,12 +47,12 @@
      text-decoration: none;
  }
  
- #team .col{
+ /* #team .col{
      background-image: url("img/11.png");
      background-repeat: repeat-x;
      background-attachment: fixed;
      color: #fff;
- }
+ } */
  h1{
      font-size: 36px;
      color: #555;
@@ -67,16 +70,21 @@
  #team img{
      margin-top: -50px;
  }
+ #team .card-body h3, h5{
+    color: #555;
+ }
  #team i{
      font-size: 26px;
      color: #555;
  }
  #team p{
      font-weight: 500;
+     color: #555;
  }
  #team .card{
+    background-color: inherit;
      border-radius: 0;
-     margin: 10px;
+     margin-top: 80px;
      box-shadow: 5px 5px 15px #24354b;
      transition: all 0.3s ease-in;
      -webkit-transition: all 0.3s ease-in;
@@ -107,6 +115,7 @@
     background-color: #000;
     max-width: 100%;
 }
+
 .cards{
     background-color: rgb(48, 44, 44);
     color: white;
@@ -123,10 +132,11 @@
 .card .card-text{
     text-align: center;
     margin-top: 25px;
-    
+    position: absolute;
 }
 .card .card-text p{
-    margin-top: 15px;
+    margin-top: 280px;
+    margin-right: 5px;
     color: #fff;
 }
 .card .card-text h1{

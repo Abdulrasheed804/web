@@ -16,6 +16,10 @@
 <body>
     <div class="col-sm-12 text-center inputs" >
            <a href="index.html">Home</a>
+           <!-- <iframe width="420" height="315"
+             src="https://www.youtube.com/embed/kPyhpph-NUY?autoplay=1&mute=1&loop=1&controls=0">
+           </iframe> -->
+
            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="rgb(43, 10, 190)" style="cursor: pointer; position:fixed; left: 20px; top: 12px" id="night_mode" class="bi bi-cloud-moon-fill moon_cloud" viewBox="0 0 16 16">
            <path d="M11.473 11a4.5 4.5 0 0 0-8.72-.99A3 3 0 0 0 3 16h8.5a2.5 2.5 0 0 0 0-5h-.027z"/>
            <path d="M11.286 1.778a.5.5 0 0 0-.565-.755 4.595 4.595 0 0 0-3.18 5.003 5.46 5.46 0 0 1 1.055.209A3.603 3.603 0 0 1 9.83 2.617a4.593 4.593 0 0 0 4.31 5.744 3.576 3.576 0 0 1-2.241.634c.162.317.295.652.394 1a4.59 4.59 0 0 0 3.624-2.04.5.5 0 0 0-.565-.755 3.593 3.593 0 0 1-4.065-5.422z"/>
@@ -26,14 +30,21 @@
         </div>
         <div class="input-box">
             <label class="detials">Phone</label>
-            <input type="number" name="First Name" id="">
+            <input type="number" name="First Name" id="phone">
         </div>
         <div class="input-box">
             <textarea name="" id="" cols="70" rows="5" placeholder="complaints?"></textarea>
         </div>
             <button class="text-center">Submit</button>
+
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" onclick="myFunction();" width="16" height="16" fill="currentColor" class="bi bi-paperclip" viewBox="0 0 16 16">
+                    <path d="M4.5 3a2.5 2.5 0 0 1 5 0v9a1.5 1.5 0 0 1-3 0V5a.5.5 0 0 1 1 0v7a.5.5 0 0 0 1 0V3a1.5 1.5 0 1 0-3 0v9a2.5 2.5 0 0 0 5 0V5a.5.5 0 0 1 1 0v7a3.5 3.5 0 1 1-7 0V3z"/>
+                </svg> -->
     </div>
     <style>
+        #phone::-webkit-inner-spin-button{
+            display: none;
+        }
         body.night{
             background-color: #000;
             color: #ffff;
@@ -79,17 +90,22 @@
         margin-top: 10rem;
       }  
     textarea::placeholder{
-    text-indent: 2px;
+    text-indent: 10px;
     color: rgb(197, 197, 248);
-    padding: 10px;
+    padding: 4px;
   }
  textarea{
-    color: #ffff;
-    text-indent: 20px;
-    border: 20px;
+    color: rgb(99, 96, 96);
+    text-indent: 10px;
+    border: 1px solid blue;
     width: 25rem;
     border-radius: 15px;
-    background: rgb(43, 10, 190);
+    background: inherit;
+ }
+ textarea:focus{
+    outline: none;
+    /* margin: 2px; */
+    transform: translate(5px, 1px);
  }
  input[type=email]{
     width: 15rem;
@@ -119,6 +135,9 @@
         night_mode.addEventListener('click', function(){
             document.body.classList.toggle('night')
         })
+        // function myFunction(){
+            
+        // }
     </script>
 </body>
 </html>

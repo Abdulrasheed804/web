@@ -5,6 +5,11 @@
     box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.1);
     padding: 30px;
 }
+body.black{
+    color: white;
+    background-color: #000;
+    transition: 0.5s;
+}
 .main .title{
     text-transform: uppercase;
     text-align: center;
@@ -43,17 +48,12 @@
     line-height: 26px;
     font-weight: 400;
     color: #5543ca;
-    cursor: text;
+    cursor: grab;
     text-transform: capitalize;
 }
 .contact-form .extra{
     position: absolute;
     bottom: 45px;
-}
-i.eyeslash{
-    position: relative;
-    bottom: 30px;
-    left: 310px;
 }
 .contact-form .submit-btn{
     display: inline-block;
@@ -75,4 +75,13 @@ i.eyeslash{
 .log a:hover{
     color: #f4524d;
     text-decoration: none;
+}
+#mobile-number::-webkit-inner-spin-button{
+    display: none;
+}
+input{
+    background-color: inherit;
+}
+input, select, textarea{
+    color: rgb(88, 83, 83);
 }
