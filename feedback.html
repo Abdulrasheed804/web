@@ -17,7 +17,7 @@
     
 </head>
 <body>
-        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="rgb(214, 102, 102)" style="cursor: pointer; position:fixed; left: 20px; top: 12px" id="night_mode" class="bi bi-cloud-moon-fill moon_cloud" viewBox="0 0 16 16">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="rgb(7, 7, 243)" style="cursor: pointer; position:fixed; left: 20px; top: 12px" id="night_mode" class="bi bi-cloud-moon-fill moon_cloud" viewBox="0 0 16 16">
         <path d="M11.473 11a4.5 4.5 0 0 0-8.72-.99A3 3 0 0 0 3 16h8.5a2.5 2.5 0 0 0 0-5h-.027z"/>
         <path d="M11.286 1.778a.5.5 0 0 0-.565-.755 4.595 4.595 0 0 0-3.18 5.003 5.46 5.46 0 0 1 1.055.209A3.603 3.603 0 0 1 9.83 2.617a4.593 4.593 0 0 0 4.31 5.744 3.576 3.576 0 0 1-2.241.634c.162.317.295.652.394 1a4.59 4.59 0 0 0 3.624-2.04.5.5 0 0 0-.565-.755 3.593 3.593 0 0 1-4.065-5.422z"/>
         </svg>
@@ -28,12 +28,12 @@
             <div class="col-lg-12 text-center" >
                 <div class="form-field">
                     <div class="label"><p>email</p></div>
-                    <input type="email" name="" id="" placeholder="Your email address">
+                    <input type="email" name="" id="" placeholder="Your email address" required>
                 </div>
                 <div class="col-lg-12 text-center">
                     <div class="form-field">
                         <div class="label"><p>subject</p></div>
-                        <input type="text" name="" id="" placeholder="Summary of your observation....">
+                        <input type="text" name="" id="" placeholder="Summary of your feedback....">
                     </div>
                 </div>
                 <div class="col-lg-12 text-center">
@@ -59,18 +59,20 @@
             color: #fff;
             transition: 0.5s;
          }
-        
         .container{
-            background-color: rgb(242, 245, 247);
+            background-color: inherit;
             width: 30rem;
         }
         h1{
             font-family: 'Courier New', Courier, monospace;
-            color: rgb(214, 102, 102);
+            color: rgb(7, 7, 243);
             margin: 30px;
-            background: linear-gradient(to right, #f4524d 0%, #5543ca 100%);
+            background: linear-gradient(to right, rgb(7, 7, 243) 0%, #5543ca 100%);
             -webkit-background-clip: text;
            -webkit-text-fill-color: transparent;
+        }
+        ::placeholder{
+            color: rgb(110, 103, 103);
         }
         .label{
             margin-right: 26rem;
@@ -82,25 +84,30 @@
             font-family: 'Courier New', Courier, monospace;
         }
         .form-field input{
-            background-color: #fff;
+            background-color: inherit;
             width: 30rem;
             border-radius: 5px;
         }
         .form-field input{
-            border: none;
+            border: 2px solid rgb(7, 7, 243);
             padding: 1rem;
         }
         .form-field input:focus{
             outline: none;
         }
         textarea{
+            background-color: inherit;
             width: 30rem;
             height: 15rem;
             padding: 1rem;
             border-radius: 5px;
+            border: 1px solid rgb(7, 7, 243);
         }
         textarea:focus{
             outline: none;
+        }
+        input, select, textarea{
+            color: rgb(129, 126, 126);
         }
         button{
             width: 10rem;
@@ -108,7 +115,7 @@
             padding: 5px;
             border: none;
             color: #fff;
-            background: linear-gradient(to right, #f4524d 0%, #5543ca 100%);
+            background: linear-gradient(to right, rgb(7, 7, 243) 0%, #5543ca 100%);
             
             
         }
