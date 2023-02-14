@@ -19,15 +19,32 @@ moon_cloud.addEventListener('click', function() {
     document.body.classList.toggle('black');
  });
 
- hamburger.addEventListener('click', function(){
-    let menu = document.getElementById('menu-body');
-    if(menu.style.display === 'block'){
-         menu.style.display = 'none';
-    }else{
-        menu.style.display = 'block';
-    };
+//  hamburger action
+
+let hamburger = document.querySelector(".hamburger")
+let menu = document.querySelector(".menu-body")
+
+
+hamburger.addEventListener("click", function(){
+    hamburger.classList.toggle("active")
+    menu.classList.toggle("active")     
+});
+    document.addEventListener("click", function (){
+        hamburger.classList.remove("active")
+        menu.classList.toggle("active")
+    })
+
+
+
+//  hamburger.addEventListener('click', function(){
+//     let menu = document.getElementById('menu-body');
+//     if(menu.style.display === 'block'){
+//          menu.style.display = 'none';
+//     }else{
+//         menu.style.display = 'block';
+//     };
    
- });
+//  });
  users.addEventListener('click', function(){
     let user = document.getElementById('userCard');
     if(user.style.display === 'block'){
