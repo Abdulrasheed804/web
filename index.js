@@ -21,18 +21,20 @@ moon_cloud.addEventListener('click', function() {
 
 //  hamburger action
 
-let hamburger = document.querySelector(".hamburger")
-let menu = document.querySelector(".menu-body")
+let hamburger = document.getElementById("hamburger")
+let menu = document.getElementById("menu-body")
 
+document.addEventListener("click",function(e){
+    if(e.target.id !== "hamburger" && e.target.id !== "menu-body"){
+         hamburger.classList.remove("active")
+         menu.classList.remove("active")
+    }
+})
 
 hamburger.addEventListener("click", function(){
     hamburger.classList.toggle("active")
     menu.classList.toggle("active")     
 });
-    document.addEventListener("click", function (){
-        hamburger.classList.remove("active")
-        menu.classList.toggle("active")
-    })
 
 
 

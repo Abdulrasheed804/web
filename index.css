@@ -251,6 +251,7 @@ section.footer .map p{
     padding: 5px;
     z-index: 999;
 }
+
 /*hamburger*/
 
 .hamburger{
@@ -303,18 +304,17 @@ section.footer .map p{
     background: #063e9e;
     margin-top: -25px;
     border-radius: 20px;
-    height: 50vh;
     width: 35vh;
     position: fixed;
     top: 15vh;
-    left: 55vw;
-    display: none;
+    /* left: 55vw; */
+    right: -300px;
     transition: 0.5s;
     animation: mymove 1s;
     z-index: 9999;
 }
 .menu-body.active{
-    display: block;
+    right: -20px;
 }
 @keyframes mymove{
     from {
