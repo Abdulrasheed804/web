@@ -124,6 +124,15 @@
         night_mode.addEventListener('click', function(){
             document.body.classList.toggle('night')
         })
+        // Get the current time
+            var currentTime = new Date().getHours();
+
+            // Set the dark mode from 6 PM to 6 AM
+            if (currentTime >= 18 || currentTime < 6) {
+                window.addEventListener('load', function () {
+                    document.body.classList.toggle('black');
+                })
+            }
     </script>
 </body>
 </html>

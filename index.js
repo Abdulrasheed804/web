@@ -14,11 +14,22 @@
 //     document.body.classList.toggle('black');
 // })
 
+ let d = new Date()
+        const year = d.getFullYear()
+        document.getElementById("year").innerHTML = year
 
 moon_cloud.addEventListener('click', function() {
     document.body.classList.toggle('black');
- });
+    })
+// Get the current time
+var currentTime = new Date().getHours();
 
+// Set the dark mode from 6 PM to 6 AM
+if (currentTime >= 18 || currentTime < 6){
+     window.addEventListener('load', function(){
+    document.body.classList.toggle('black');
+     })
+}
 //  hamburger action
 
 let hamburger = document.getElementById("hamburger")

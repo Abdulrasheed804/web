@@ -43,12 +43,12 @@
                 </div>
                 <div class="form-check">
                     <label class="form-check-label">
-                    <input type="radio" class="form-check-input" name="" id="check" value="checked" required>
-                    I agree to the tearms and conditions
+                    <input type="checkbox" class="form-check-input" name="" id="check" value="checked" required>
+                    I agree to the terms and conditions
                     </label>
                 </div>
                 <div class="form-field col-lg-12">
-                    <input class="submit-btn" type="submit" value="submit" name="" id="btn">
+                    <input class="submit-btn" type="submit"  value="submit" name="" id="btn">
                 </div>
                 <p4 class="log">already have an account?&nbsp;<a href="login.html">LOGIN</a></p4>
             </div>
@@ -80,7 +80,8 @@
              
 
 
-             btn.addEventListener("click", function(){
+             btn.addEventListener("click", function(e){
+                e.preventDefault();
                 if (passwordEl.value === ""){
                 alert("password field cannot be empty")
              }else if(passwordEl.value.length < 8){
