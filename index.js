@@ -28,8 +28,8 @@ var currentTime = new Date().getHours();
 if (currentTime >= 18 || currentTime < 6){
      window.addEventListener('load', function(){
     document.body.classList.toggle('black');
-     })
-}
+     });
+};
 //  hamburger action
 
 let hamburger = document.getElementById("hamburger")
