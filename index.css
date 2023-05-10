@@ -452,7 +452,7 @@ section.footer .map p{
         display: block;
         cursor: pointer;
         position: fixed;
-            left: 60vh;
+            left: 40vh;
             top: 13px;
             cursor: pointer;
             z-index: 9999;
