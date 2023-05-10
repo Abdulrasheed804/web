@@ -53,7 +53,7 @@ nav .bi-cloud-moon-fill{
     cursor: pointer;
 }
 .Company-Logo{
-  position: fixed;
+  position: absolute;
   z-index: 999;
   top: 2px;
   left: 20px;
@@ -451,8 +451,8 @@ section.footer .map p{
     #night_mode {
         display: block;
         cursor: pointer;
-        position: fixed;
-        left: 250px;
+        position: absolute;
+        left: 240px;
         top: 17px;
         cursor: pointer;
         z-index: 9999;
